@@ -7,5 +7,7 @@ public class Hello {
 		else {
 			System.out.println("Hello World ");
 		}
+		Menu mMenu = new Menu();
+		mMenu.ShowMain();
 	}
 }
