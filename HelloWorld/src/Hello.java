@@ -1,10 +1,11 @@
 
 public class Hello {
 	public static void main (String[] args){
-		if (args != null)
+		if (args.length > 0) {
 			System.out.printf("Hello World %s ",args[0]);
-		else
+		}
+		else {
 			System.out.println("Hello World ");
+		}
 	}
-
 }
