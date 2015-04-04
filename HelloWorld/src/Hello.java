@@ -1,7 +1,10 @@
 
 public class Hello {
 	public static void main (String[] args){
-		System.out.printf("Hello World %s",args[0]);
+		if (args != null)
+			System.out.printf("Hello World %s ",args[0]);
+		else
+			System.out.println("Hello World ");
 	}
 
 }
