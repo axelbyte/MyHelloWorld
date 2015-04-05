@@ -2,7 +2,7 @@
 public class Hello {
 	public static void main (String[] args){
 		if (args.length > 0) {
-			System.out.printf("Hello World %s ",args[0]);
+			System.out.printf("Hello World %s\n",args[0]);
 		}
 		else {
 			System.out.println("Hello World ");
