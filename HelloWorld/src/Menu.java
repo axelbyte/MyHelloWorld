@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Menu {
-	private String menuItem ="1.";
+	private String menuItem ="1."; 
 	private Stats mStats = new Stats();
 
 	public int ShowMain (){
@@ -16,7 +16,7 @@ public class Menu {
 		System.out.println("* 3) opcion 3         *");
 		System.out.println("***********************");
 		System.out.print  ("Pulse la opcion deseada:");
-		
+
 		mStats.CountMain();
 		
 		int i = 0;
