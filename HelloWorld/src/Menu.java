@@ -8,11 +8,15 @@ import java.io.InputStreamReader;
 
 
 public class Menu {
+<<<<<<< HEAD
 
 	private String menuItem ="1.";
 
 	public int ShowMain (){
 		
+=======
+	public int ShowMain (){
+>>>>>>> refs/heads/Menu
 		System.out.println("***********************");
 		System.out.println("*   Menu principal    *");
 		System.out.println("***********************");
@@ -39,24 +43,35 @@ public class Menu {
 		System.out.println("***********************");
 		System.out.println("*   Opcion 1          *");
 		System.out.println("***********************");
+<<<<<<< HEAD
 
 		menuItem = menuItem.concat("1.");
 		return 0;
 
+=======
+		return 0;
+>>>>>>> refs/heads/Menu
 	}
 	public int ShowOpt2 (){
 		System.out.println("***********************");
 		System.out.println("*   Opcion 2          *");
 		System.out.println("***********************");
+<<<<<<< HEAD
 
 		menuItem = menuItem.concat("2.");
+=======
+>>>>>>> refs/heads/Menu
 		return 0;
 	}
 	public int ShowOpt3 (){
 		System.out.println("***********************");
 		System.out.println("*   Opcion 3          *");
 		System.out.println("***********************");
+<<<<<<< HEAD
 		menuItem = menuItem.concat("3.");
 		return 0;
+=======
+		return 0;
+>>>>>>> refs/heads/Menu
 	}
 }
