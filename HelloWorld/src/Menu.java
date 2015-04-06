@@ -22,10 +22,8 @@ public class Menu {
 		try {
 			i = Integer.parseInt(br.readLine());
 		} catch (NumberFormatException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
