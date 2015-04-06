@@ -2,17 +2,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-
-
-
-
-
 public class Menu {
-
-
 	private String menuItem ="1.";
 
 	public int ShowMain (){
+		System.out.flush();
 		System.out.println("***********************");
 		System.out.println("*   Menu principal    *");
 		System.out.println("***********************");
@@ -20,6 +14,7 @@ public class Menu {
 		System.out.println("* 2) opcion 2         *");
 		System.out.println("* 3) opcion 3         *");
 		System.out.println("***********************");
+		System.out.print  ("Pulse la opcion deseada:");
 		
 		InputStreamReader isr = new InputStreamReader(System.in);
 		BufferedReader br = new BufferedReader(isr);

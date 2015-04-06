@@ -10,6 +10,5 @@ public class Hello {
 		Menu mMenu = new Menu();
 		int i = 0;
 		i = mMenu.ShowMain();
-			 
 	}
 }
