@@ -5,6 +5,11 @@ import java.io.InputStreamReader;
 public class Menu {
 	private String menuItem ="1.";
 
+
+
+	private Stats mStats = new Stats();
+
+
 	public int ShowMain (){
 		System.out.flush();
 		System.out.println("***********************");
@@ -15,6 +20,8 @@ public class Menu {
 		System.out.println("* 3) opcion 3         *");
 		System.out.println("***********************");
 		System.out.print  ("Pulse la opcion deseada:");
+		
+		mStats.CountMain();
 		
 		InputStreamReader isr = new InputStreamReader(System.in);
 		BufferedReader br = new BufferedReader(isr);
@@ -29,6 +36,7 @@ public class Menu {
 		
 		switch(i){
 		case 0:
+			mStats.Show();
 			break;
 		case 1:
 			this.ShowOpt1();
@@ -53,6 +61,7 @@ public class Menu {
 		System.out.println("*   Opcion 1          *");
 		System.out.println("***********************");
 		menuItem = menuItem.concat("1.");
+		mStats.CountOpt1();
 		return 0;
 		
 	}
@@ -61,6 +70,7 @@ public class Menu {
 		System.out.println("*   Opcion 2          *");
 		System.out.println("***********************");
 		menuItem = menuItem.concat("2.");
+		mStats.CountOpt2();
 		return 0;
 		
 	}
@@ -69,6 +79,9 @@ public class Menu {
 		System.out.println("*   Opcion 3          *");
 		System.out.println("***********************");
 		menuItem = menuItem.concat("3.");
+
+		mStats.CountOpt3();
 		return 0;
+
 	}
 }
