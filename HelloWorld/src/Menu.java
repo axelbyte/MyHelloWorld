@@ -41,6 +41,7 @@ public class Menu {
 		System.out.println("***********************");
 		menuItem = menuItem.concat("1.");
 		return 0;
+		
 	}
 	public int ShowOpt2 (){
 		System.out.println("***********************");
@@ -48,6 +49,7 @@ public class Menu {
 		System.out.println("***********************");
 		menuItem = menuItem.concat("2.");
 		return 0;
+		
 	}
 	public int ShowOpt3 (){
 		System.out.println("***********************");
