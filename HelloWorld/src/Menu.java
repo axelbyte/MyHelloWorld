@@ -33,9 +33,29 @@ public class Menu {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		switch(i){
+		case 0:
+			break;
+		case 1:
+			this.ShowOpt1();
+			this.ShowMain();
+			break;
+		case 2:
+			this.ShowOpt2();
+			this.ShowMain();
+			break;
+		case 3:
+			this.ShowOpt3();
+			this.ShowMain();
+			break;
+		default:
+			this.ShowMain();
+			break;			
+		}
 		return i;
 	}
-	public int ShowOpt1 (){
+	private int ShowOpt1 (){
 		System.out.println("***********************");
 		System.out.println("*   Opcion 1          *");
 		System.out.println("***********************");
@@ -43,7 +63,7 @@ public class Menu {
 		return 0;
 		
 	}
-	public int ShowOpt2 (){
+	private int ShowOpt2 (){
 		System.out.println("***********************");
 		System.out.println("*   Opcion 2          *");
 		System.out.println("***********************");
@@ -51,7 +71,7 @@ public class Menu {
 		return 0;
 		
 	}
-	public int ShowOpt3 (){
+	private int ShowOpt3 (){
 		System.out.println("***********************");
 		System.out.println("*   Opcion 3          *");
 		System.out.println("***********************");
