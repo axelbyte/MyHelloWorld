@@ -4,11 +4,7 @@ import java.io.InputStreamReader;
 
 public class Menu {
 	private String menuItem ="1.";
-
-
-
 	private Stats mStats = new Stats();
-
 
 	public int ShowMain (){
 		System.out.flush();
@@ -23,9 +19,10 @@ public class Menu {
 		
 		mStats.CountMain();
 		
+		int i = 0;
 		InputStreamReader isr = new InputStreamReader(System.in);
 		BufferedReader br = new BufferedReader(isr);
-		int i = 0;
+		
 		try {
 			i = Integer.parseInt(br.readLine());
 		} catch (NumberFormatException e) {
@@ -79,7 +76,6 @@ public class Menu {
 		System.out.println("*   Opcion 3          *");
 		System.out.println("***********************");
 		menuItem = menuItem.concat("3.");
-
 		mStats.CountOpt3();
 		return 0;
 
